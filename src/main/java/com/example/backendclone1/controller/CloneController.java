@@ -27,8 +27,8 @@ public class CloneController extends WebMvcConfigurationSupport {
     //create clone rest api
     @PostMapping("/create/clone")
     public Clone create(@RequestBody Clone clone) {
-        Clone clone2 = cloneService.findFirstByName(clone.getName());
-        if (clone.getName().equals(clone2.getName())) {
+        Clone clone2 = cloneService.findFirstByUrl(clone.getUrl());
+        if (clone.getUrl().equals(clone2.getUrl())) {
             clone2.setName(clone.getName());
             clone2.setUrl(clone.getUrl());
             clone2.setActive(clone.isActive());

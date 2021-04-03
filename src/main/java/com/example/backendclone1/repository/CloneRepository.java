@@ -9,6 +9,6 @@ import java.util.Optional;
 @Repository
 public interface CloneRepository extends JpaRepository<Clone, Long> {
 
-    Clone findFirstByName(String name);
+    Clone findFirstByUrl(String url);
 
 }

@@ -38,7 +38,7 @@ public class CloneService {
         cloneRepository.delete(clone);
     }
 
-    public  Clone findFirstByName(String name) {
-        return cloneRepository.findFirstByName(name);
+    public  Clone findFirstByUrl(String url) {
+        return cloneRepository.findFirstByUrl(url);
     }
 }

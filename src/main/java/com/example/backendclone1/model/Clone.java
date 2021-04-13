@@ -7,7 +7,7 @@ import java.util.Objects;
 @Table(name="storager")
 public class Clone {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name="name")

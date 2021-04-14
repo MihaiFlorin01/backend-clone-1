@@ -1,4 +1,4 @@
-package com.example.backendclone1.schedule;
+package com.example.backendclone1.websocket.schedule;
 
 import com.example.backendclone1.controller.CloneController;
 import org.springframework.beans.factory.annotation.Autowired;

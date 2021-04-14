@@ -1,4 +1,4 @@
-package com.example.backendclone1.configuration;
+package com.example.backendclone1.websocket.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

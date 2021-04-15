@@ -18,6 +18,6 @@ public class StatusScheduler {
 
     @Scheduled(fixedRate = 2000)
     public void publishStatus(){
-        template.convertAndSend("/topic/greetings", cloneController.getAll().get(0).isActive());
+        template.convertAndSend("/topic/clone", cloneController.getAll().get(0).isActive());
     }
 }
